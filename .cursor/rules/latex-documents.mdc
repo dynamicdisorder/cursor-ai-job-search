@@ -1,0 +1,15 @@
+---
+description: LaTeX CV and cover letter verification rules
+globs: cv/**/*.tex,cover_letters/**/*.tex,templates/**/*.tex
+alwaysApply: false
+---
+
+# LaTeX Application Documents
+
+- CV outputs live at `cv/main_<company>.tex` and should compile with `lualatex` to exactly 2 pages.
+- Cover letters live at `cover_letters/cover_<company>_<role>.tex` and should compile with `xelatex` to exactly 1 page.
+- Compile and visually inspect PDFs before presenting final files. The `.tex` source alone is not enough.
+- Prevent orphaned `\cventry` titles with `\needspace{5\baselineskip}` before entries when needed.
+- Use relevance-weighted cutting when content overflows: role relevance, uniqueness, and narrative dependency beat static section trimming.
+- For cover-letter bullet lists, do not put `itemize` directly inside `\lettercontent{}`; preserve the Raleway font wrapper described in the cover-letter reference.
+- If `pdftotext` is available, verify the CV text layer and keyword coverage from the extracted text.

@@ -1,0 +1,16 @@
+---
+description: Core project context for the Cursor-native AI Job Search workspace
+alwaysApply: true
+---
+
+# AI Job Search Workspace
+
+This repository is a Cursor-native job application workspace. Cursor Agent helps evaluate postings, tailor CVs, write cover letters, prepare interviews, track outcomes, search portals, and plan upskilling.
+
+Canonical profile sources:
+- `PROFILE.md` for the high-level candidate profile and verification checklist.
+- `.cursor/skills/job-application/references/01-candidate-profile.md` for facts about education, experience, skills, awards, and references.
+- `.cursor/skills/job-application/references/02-behavioral-profile.md` for behavioral fit and working style.
+- `.cursor/skills/job-application/references/04-job-evaluation.md` for fit scoring.
+
+Use project skills under `.cursor/skills/` for workflows. Preserve user data boundaries: documents, generated application files, tracker rows, salary data, and upskill reports are personal and should not be committed unless the user explicitly asks.

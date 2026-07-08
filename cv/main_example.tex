@@ -1,0 +1,90 @@
+%% Example CV template
+%% This file is intentionally generic. Run the profile setup workflow to
+%% populate a private, personalized CV locally.
+%%
+%% Compile with: lualatex main_example.tex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Candidate CV},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+
+% Personal data - replace locally, do not commit private details.
+\name{First}{Last}
+\address{City, Country}{}{}
+\phone[mobile]{+00 000 000 000}
+\email{name@example.com}
+\extrainfo{Language 1 \& Language 2}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{6pt}
+\small{Senior technology and product leader with experience in delivery, stakeholder coordination, team scaling, and business-facing technical execution. Replace this summary with a truthful, role-specific profile generated from your private profile files.}
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{Technology Leadership}: Team scaling, technical planning, delivery ownership, and engineering management.
+\item \textbf{Product \& Delivery}: Product ownership, roadmap coordination, agile delivery, and KPI alignment.
+\item \textbf{AI Automation}: Workflow automation, AI-assisted development, agentic systems, API integrations, and business process improvement.
+\item \textbf{Business-Facing Execution}: Stakeholder communication, requirements discovery, solution scoping, and delivery risk management.
+\end{itemize}
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+\item{\cventry{YYYY--YYYY}{Role Title}{Company Name}{Location}{}{\vspace{1pt}
+\begin{itemize}
+    \item Describe a verified achievement with scope, action, and impact.
+    \item Include technologies, domains, and business outcomes only when true.
+    \item Quantify results where possible.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{YYYY--YYYY}{Previous Role Title}{Previous Company}{Location}{}{\vspace{1pt}
+\begin{itemize}
+    \item Describe delivery, product, leadership, or technical responsibilities.
+    \item Reorder bullets when tailoring the CV to a specific role.
+\end{itemize}}}
+
+\end{itemize}
+
+\section{Education \& Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\cventry{YYYY--YYYY}{Degree or Certification}{Institution}{}{}{Relevant focus areas.}}
+\item \textbf{Certification Name} (YYYY).
+\end{itemize}
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item Language 1 and Language 2. Add proficiency levels when confirmed.
+\end{itemize}
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}

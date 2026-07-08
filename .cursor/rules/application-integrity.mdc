@@ -1,0 +1,14 @@
+---
+description: Non-negotiable integrity rules for job applications
+alwaysApply: true
+---
+
+# Application Integrity
+
+- Evaluate fit before drafting any application. Present skills match, experience match, behavioral/culture match, salary benchmark if available, score, and recommendation before asking whether to proceed.
+- Never fabricate skills, experience, outcomes, company facts, salary data, job postings, study resources, or ATS keywords.
+- Ground profile claims in `PROFILE.md` and `.cursor/skills/job-application/references/01-candidate-profile.md`.
+- Verify company-specific claims independently with WebSearch/WebFetch before including them in a CV or cover letter.
+- Mention AI tooling as `Cursor` or `AI-assisted development` unless the user's real profile explicitly names another tool.
+- Treat location constraints and deal-breakers as vetoes, not minor score adjustments.
+- Record gaps honestly. Do not hide them with keyword stuffing.

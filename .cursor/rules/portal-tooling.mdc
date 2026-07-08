@@ -1,0 +1,13 @@
+---
+description: Standards for job portal CLI skills and scraper tooling
+globs: .agents/skills/**/*
+alwaysApply: false
+---
+
+# Job Portal Tooling
+
+- Preserve the portal CLI contract: `search`, `detail`, JSON/table/plain output, structured JSON errors on stderr, and no fabricated postings.
+- Prefer public, unauthenticated endpoints. Stop on auth-walled portals and surface robots.txt or terms concerns plainly.
+- Keep request volume low and personal-use warnings visible for portals with restrictive terms.
+- Run `bun run typecheck` and `bun run test` inside each portal CLI after changes when Bun dependencies are installed.
+- Do not restructure `job_scraper/seen_jobs.json` in ways that break deduplication.
